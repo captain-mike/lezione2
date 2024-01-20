@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Modalità di invio dati:
+        POST = invia i dati nascondensoli, utile per grande mole di dati
+        GET = sporca l'indirizzo aggiungendo dei query params, ossia coppie chiave/valore composte da nome + valore del campo
+        -->
+    
+    <form method="post">
+
+        <input type="text" name="nome" placeholder="Il tuo nome">
+        <input type="password" name="password" placeholder="Password">
+        <input type="email" name="email" placeholder="Email">
+
+        <label for="consenso">Acconsento al trattamento dei dati</label>
+        <input id="consenso" name="consenso" type="checkbox">
+
+        <select name="city">
+            <option value="">--scegli--</option>
+            <option value="roma">Roma</option>
+            <option value="milano">Milano</option>
+        </select>
+
+        <textarea name="messaggio" cols="30" rows="10"></textarea>
+
+        <button>invia</button>
+
+    </form>
+
+</body>
+</html>
